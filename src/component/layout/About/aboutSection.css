@@ -1,0 +1,106 @@
+.aboutSection {
+  height: 180vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  position: absolute;
+}
+
+.aboutSectionGradient {
+  background-image: url("../../../image/S_mart_logo.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutSectionContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #FFD58F;
+  width: 80vw;
+  height: 160vh;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutSectionContainer > h1 {
+  font: 400 3vmax "Roboto";
+  color: #CD853F;
+  margin: 2vmax;
+}
+
+
+.aboutSectionContainer > div {
+  display: flex;
+  width: 100%;
+}
+
+.aboutSectionContainer > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.aboutSectionContainer > div > div > p {
+  color: rgba(0, 0, 0, 0.623);
+  font: 100 1vmax "Roboto";
+}
+
+.aboutSectionContainer > div > div > h3 {
+    color: rgba(0, 0, 0, 0.829);
+    font: 100 1vmax "Roboto";
+  }
+
+  .aboutSectionContainer > div > div > h2 {
+    color: rgba(0, 0, 0, 0.712);
+    font: 100 1.3vmax "Roboto";
+  }
+
+  .aboutSectionContainer > div > div > h1 {
+    color: rgba(0, 0, 0, 0.664);
+    font: 100 2.5vmax "Roboto";
+  }
+  .aboutSectionContainer > div > div > h6 {
+    color: rgba(0, 0, 0, 0.664);
+    font: 100 0.8vmax "Roboto";
+  }
+
+.aboutSectionContainer > div > div > button {
+  margin: 0.8vmax 0;
+}
+
+.aboutSectionContainer > div > div > span {
+  font: 100 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.616);
+  text-align: left;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSectionContainer > div {
+    display: block;
+  }
+
+  .aboutSectionContainer > h1 {
+    font: 400 5vmax "Roboto";
+    margin: 3vmax;
+  }
+
+  .aboutSectionContainer > div > div > p {
+    font: 100 2vmax "Roboto";
+  }
+
+  .aboutSectionContainer > div > div > span {
+    font: 100 1.4vmax "Roboto";
+    width: 70%;
+  }
+}
